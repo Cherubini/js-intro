@@ -15,4 +15,9 @@ var clarabella=10;
 
 const topolino = 12 -80; 
 
+alert("fagioli"); //si usa poco perché blocca le interazioni con il resto della pagina. Non ritorna, quindi da undefined
+
+console.log('stampa x: ', topolino)
+
+
 
