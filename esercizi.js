@@ -115,34 +115,28 @@
 
 //  alert('sta iniziando l\'esercizio chessboard');
 
-//  let columns = prompt('Give me the width');
-//  let rows = prompt('Give me the height');
-//  let row='';
-//  for (let i = 1; i <= rows; i++) 
-//  {
-//      for (let j = 1; j <= columns; j++) 
-//      {
-//          if(i%2!=0)
-//              row+=' '+'#';
-//            else
-//              row+='# ';
-//      }
-//      row+= '\n';  
-//  }
-//  console.log(row);
 
-let columns = prompt('Give me the width');
-let rows = prompt('Give me the height');
-let row='';
+ let columns = prompt('Give me the width');
+ let rows = prompt('Give me the height');
+ let row='';
 
-for (let i = 1; i <= columns*rows; i++) 
-{
-    if ((row.length/columns)%2===0) 
-        row+=' #';
-      else
-        row+='# ';
+ for (let i = 0; i < rows; i++)
+  {
+  for (let j = 0; j < columns; j++) 
+    if(i%2===0)
+      if (j%2===0) 
+        row+='#';
+       else
+        row+=' ';
+     else if (j%2!=0) 
+        row+='#';
+       else
+        row+=' '; 
+  row+='\n';
+  }
+ console.log(row);
 
-    if(i%columns===0)
-        row+='\n';    
-}
-console.log(row);
+ /*apprendistato tre anni formazione
+ stipendio 23-25k
+ milano 30-32k
+ */
